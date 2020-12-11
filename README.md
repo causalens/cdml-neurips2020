@@ -1,5 +1,5 @@
 # Data Generating Process to Evaluate Causal Discovery Techniques for Time Series Data
-This repository captures source code and data sets for our paper "Data Generating Process to Evaluate Causal Discovery Techniques for Time Series Data" at the [Causal Discovery &amp; Causality-Inspired Machine Learning Workshop](https://www.cmu.edu/dietrich/causality/neurips20ws/) at Neural Information Processing Systems (NeurIPS) 2020. For ease, the PDF of the paper is also provided in this repository, but can also be found on the workshop website [here](https://www.cmu.edu/dietrich/causality/CameraReadys-accepted%20papers/51%5cCameraReady%5ccamera_ready_submission.pdf).
+This repository captures source code and data sets for our paper "Data Generating Process to Evaluate Causal Discovery Techniques for Time Series Data" at the [Causal Discovery &amp; Causality-Inspired Machine Learning Workshop](https://www.cmu.edu/dietrich/causality/neurips20ws/) at Neural Information Processing Systems (NeurIPS) 2020. For ease, the PDF of the paper is provided in this repository, but can also be found on the workshop website [here](https://www.cmu.edu/dietrich/causality/CameraReadys-accepted%20papers/51%5cCameraReady%5ccamera_ready_submission.pdf).
 
 If you utilise our data generating process, please cite:
 ```
@@ -13,6 +13,7 @@ If you utilise our data generating process, please cite:
 
 ## Usage
 
+### Setup
 The code was developed and tested using Python 3.7.8. The required Python packages, and their versions, are provided in `requirements.txt`. After cloning the repository locally, create a virtual environment by running the following commands:
 ```
 python3 -m venv <env_name>
@@ -21,6 +22,7 @@ pip install -r <path_to_local_repo>/requirements.txt
 deactivate
 ```
 
+### Example Script
 A simple example script is provided in the `dgp` folder. Running `example_script.py` will generate some synthetic data, plot it, and plot the causal diagram of the underlying Structural Causal Model (SCM) from which the data was generated. Looking at the unit tests in `dgp/tests` provide further insight into how the code works.
 
 ## Experiment Data Sets
